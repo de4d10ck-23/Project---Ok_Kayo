@@ -1,0 +1,44 @@
+body {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+      body.dark {
+        background: #000;
+      }
+      body.light {
+        background: #fff;
+      }
+
+      main {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      p {
+        font-size: 8px;
+        line-height: 7px;
+        width: 50%;
+        background-image: url(img/img3.png);
+        font-weight: 900;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        -webkit-background-clip: text;
+        color: transparent;
+        text-align: center;
+        font-family: monospace;
+        word-wrap: break-word;
+        filter: grayscale(0);
+      }
+      button {
+        position: fixed;
+      }
+      @media (orientation: portrait) {
+        p {
+          width: 100%;
+        }
+      }
